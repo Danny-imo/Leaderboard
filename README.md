@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <h3><b>TO DO LIST README</b></h3>
+  <h3><b>LEADERBOARD README</b></h3>
 
 </div>
 
