@@ -1,0 +1,42 @@
+.LeadS {
+  font-size: 40px;
+  margin-bottom: -80px;
+  margin-left: 20px;
+}
+
+.RecentS {
+  padding-left: 35px;
+}
+
+.paraS {
+  margin-left: 190px;
+  margin-top: -42px;
+  font-size: 13px;
+  border: 2px solid;
+  width: 17%;
+}
+
+.uls {
+  border: 2px solid;
+  width: 84%;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 30px;
+}
+
+.container1 {
+  display: flex;
+  gap: 20px;
+}
+
+.container2 {
+  margin-top: 80px;
+}
+
+form {
+  margin-top: 85px;
+}
+
+button {
+  margin-left: 120px;
+}
