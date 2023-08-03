@@ -2,7 +2,7 @@ const API_KEY = 'Xc9LpWvBxMXHyr3QJGsT';
 const API_ENDPOINT = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${API_KEY}/scores`;
 
 // Function to save player score to the API
-export async function saveScoreToAPI(playerData) {
+export const saveScoreToAPI = async (playerData) => {
   try {
     const response = await fetch(API_ENDPOINT, {
       method: 'POST',
@@ -20,10 +20,10 @@ export async function saveScoreToAPI(playerData) {
   } catch (error) {
     throw new Error(`Error saving player score: ${error.message}`);
   }
-}
+};
 
 // Function to get scores from the API
-export async function getScoresFromAPI() {
+export const getScoresFromAPI = async () => {
   try {
     const response = await fetch(API_ENDPOINT);
 
@@ -41,4 +41,4 @@ export async function getScoresFromAPI() {
   } catch (error) {
     throw new Error(`Error fetching scores: ${error.message}`);
   }
-}
+};

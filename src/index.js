@@ -1,7 +1,7 @@
 import './style.css';
 import { saveScoreToAPI, getScoresFromAPI } from './api.js';
 
-function createDynamicHTML() {
+const createDynamicHTML = () => {
   const root = document.createElement('div');
   root.className = 'container1';
 
@@ -107,10 +107,10 @@ function createDynamicHTML() {
   });
 
   document.body.appendChild(root);
-}
+};
 
 // Function to update the scores list by fetching data from the API
-async function updateScoresList() {
+const updateScoresList = async () => {
   const ul = document.getElementById('scoreList');
   ul.innerHTML = ''; // Clear the existing list items
 
@@ -124,7 +124,7 @@ async function updateScoresList() {
   } catch (error) {
     throw new Error('Error fetching scores from API:', error);
   }
-}
+};
 
 createDynamicHTML();
 updateScoresList(); // Initial fetch to populate the scores list on page load
