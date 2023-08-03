@@ -1,5 +1,5 @@
 import './style.css';
-import { saveScoreToAPI, getScoresFromAPI } from './api';
+import { saveScoreToAPI, getScoresFromAPI } from './api.js';
 
 function createDynamicHTML() {
   const root = document.createElement('div');
@@ -101,10 +101,8 @@ function createDynamicHTML() {
         // Update the scores list by fetching data from API
         await updateScoresList();
       } catch (error) {
-        console.error('Error saving player score:', error);
+        throw new Error('Error saving player score:', error);
       }
-    } else {
-      alert('Please enter a valid name and score.');
     }
   });
 
@@ -124,7 +122,7 @@ async function updateScoresList() {
       ul.appendChild(li);
     });
   } catch (error) {
-    console.error('Error fetching scores from API:', error);
+    throw new Error('Error fetching scores from API:', error);
   }
 }
 

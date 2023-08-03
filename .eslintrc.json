@@ -15,10 +15,12 @@
       "import/prefer-default-export": "off",
       "import/no-mutable-exports": "off",
       "no-param-reassign": "off",
+      "no-restricted-globals": "off",
       "no-unused-expressions": "off",
       "no-undef": "off",
       "no-use-before-define": "off",
       "eol-last": "off",
+      "radix": "off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
