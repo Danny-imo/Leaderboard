@@ -1,7 +1,7 @@
 .LeadS {
   font-size: 40px;
-  margin-bottom: -80px;
   margin-left: 20px;
+  text-align: center;
 }
 
 .RecentS {
@@ -25,9 +25,16 @@
   margin-left: 30px;
 }
 
+.uls li:nth-child(even) {
+  background-color: rgb(0, 193, 252);
+}
+
 .container1 {
   display: flex;
   gap: 20px;
+  border: rgb(0, 252, 252) 9px solid;
+  width: 50%;
+  margin-left: 318px;
 }
 
 .container2 {
@@ -39,5 +46,6 @@ form {
 }
 
 button {
-  margin-left: 120px;
+  color: red;
+  margin-left: 200px;
 }
